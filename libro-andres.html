@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name = "viewport"content = "width = device-width,initial-scale = 1.0">
+    <title>La Caverna</title>
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+  <header class="header-ext">
+    <a href="index.html">
+        <img class="logo-header" src="logo.png">
+        </a>
+      
+        
+
+ <nav>
+    <a href="index.html#seccion2">
+        <img class="header-img" src="conocenos.png">
+        </a>
+    <a href="index.html#seccion3">
+        <img class="header-img" src="fechas.png">
+        </a>   
+    <a href="index.html#seccion3">
+        <img class="header-img" src="reserva.png">
+        </a> 
+    <a href="index.html#seccion5">
+        <img class="header-img" src="encontrarnos.png">
+        </a>    
+    <a href="index.html#seccion6">
+        <img class="header-img" src="contactanos.png">
+        </a> 
+   </nav>
+</header>
+
+  
+  <section class="section-trabajos-individuales"> 
+
+
+
+    <title class="titulo-principito"> El principito </title>
+
+    <div class="contenedor-trabajos-individual">
+        <div class="caja-trabajos-imagen">
+            <img class="trabajos-imagen" src="libro-andres2.png" onclick="ampliarImagen(this)"> 
+        </div>
+            
+        <div class="caja-trabajos-texto"> 
+            <p class="sobre-mi-texto">Tu párrafo de descripción va aquí. Puedes escribir lo que quieras.
+                Tu párrafo de descripción va aquí. Puedes escribir lo que quieras.
+                Tu párrafo de descripción va aquí. Puedes escribir lo que quieras.
+                Tu párrafo de descripción va aquí. Puedes escribir lo que quieras.
+                Tu párrafo de descripción va aquí. Puedes escribir lo que quieras.
+                Tu párrafo de descripción va aquí. Puedes escribir lo que quieras.
+                Tu párrafo de descripción va aquí. Puedes escribir lo que quieras.
+                u párrafo de descripción va aquí. Puedes escribir lo que quieras.
+                Tu párrafo de descripción va aquí. Puedes escribir lo que quieras.<br>
+              
+            </p>
+
+            <img class="arrow1" src="arrow1.png" alt="">
+                <a href="trabajos.html">
+            <img class="volver" src="volver.png">
+                 </a> 
+             <img class="arrow2" src="arrow2.png" alt="">
+
+
+
+        </div>
+
+        
+
+    </div>
+    
+    <div id="modal" class="modal">
+        <span class="cerrar" onclick="cerrarModal()">&times;</span>
+        <img id="imagenModal" class="imagen-modal">
+      </div>
+
+ 
+
+
+
+   
+  </section> 
+
+  <footer>
+    <div class="footer-text">
+        <h1>© 2023 La Caverna</h1> 
+       </div>
+
+  </footer>
+
+
+
+
+  <script>
+    function ampliarImagen(imagen) {
+      var modal = document.getElementById('modal');
+      var imagenModal = document.getElementById('imagenModal');
+      modal.style.display = 'block';
+      imagenModal.src = imagen.src;
+    }
+    
+    function cerrarModal() {
+      var modal = document.getElementById('modal');
+      modal.style.display = 'none';
+    }
+     
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

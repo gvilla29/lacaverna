@@ -1,0 +1,935 @@
+
+@font-face {
+    font-family: 'blankide';
+    src: url('BLANKIDE.ttf') format('truetype'); 
+    
+}
+
+@font-face {
+    font-family: 'babydoll';
+    src: url('BabyDoll.ttf') format('truetype'); 
+    
+}
+
+@font-face {
+    font-family: 'falturaAlien';
+    src: url('FalturaAlien.ttf') format('truetype'); 
+    
+}
+
+@font-face {
+    font-family: 'glass';
+    src: url('Glass.ttf') format('truetype'); 
+    
+}
+
+@font-face {
+    font-family: 'misfits';
+    src: url('MISFITS.TTF') format('truetype'); 
+    
+}
+
+
+@font-face {
+    font-family: 'pulse-virgin';
+    src: url('Pulse_virgin.ttf') format('truetype'); 
+    
+}
+
+@font-face {
+    font-family: 'vtkscontrol';
+    src: url('vtksControl.ttf') format('truetype'); 
+    
+}
+
+@font-face {
+    font-family: 'white-on-black';
+    src: url('White\ On\ Black.ttf') format('truetype'); 
+    
+}
+
+@font-face {
+    font-family: 'drcaligari';
+    src: url('DrCaligari.ttf') format('truetype'); 
+    
+}
+
+@font-face {
+    font-family: 'engr';
+    src: url('ENGR.ttf') format('truetype'); 
+    
+}
+
+@font-face {
+    font-family: 'nitemare';
+    src: url('NITEMARE.TTF') format('truetype'); 
+    
+}
+
+
+
+
+* {margin: 0; padding: 0}
+
+/* <<<<< HEADER >>>>>*/
+
+
+header { 
+    
+   
+    background-image:url("fondo.png") ;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    padding: 10px;
+    text-align: right; 
+    display: flex;
+    text-align: right;
+    align-items: center; 
+    position: sticky;
+    top: 0;
+    transition: opacity 0.3s ease;
+    opacity: 0; /* Inicialmente oculto */
+  
+}
+
+.header-ext{opacity: 1;
+    
+    
+
+
+
+}
+
+
+nav { width:80%;text-align: right; }
+
+nav a {text-decoration: none; 
+    padding: 6px 25px; 
+    margin:10px; 
+    margin-left: 20px;
+    display:inline-block;
+    border-radius: 20px
+}
+
+
+.header-img{width: 140px;
+    transition: transform 0.3s ease;
+
+}
+
+
+.header-img:hover {
+    transform:scale(1.2);
+}
+
+.logo-header {width: 240px;
+align-items: left;}
+
+header.visible {
+    opacity: 1; /* Visible cuando se muestra */
+}
+
+/* Ajusta el tamaño del contenido */
+#content {
+    padding: 0;
+    margin-top: -135px; /* Asegura que el margen superior sea 0 inicialmente */
+}
+
+/* Ajusta el margen superior solo cuando el header está visible */
+header.visible + #content {
+    margin-top: 0; /* Ajusta según el tamaño del header */
+}
+
+
+
+/* <<<<< FOOTER >>>>>*/
+
+footer {
+    padding: 30px;
+    position: static;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    flex-flow: wrap;
+    background-image:url("fondo.png") ;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    
+    
+  }
+  
+.footer-text { display: flex; 
+    align-items: center; 
+    justify-content: right;
+    flex-flow: wrap;
+    font-size: 10px; 
+    color: rgb(212, 211, 211);  
+    font-family: 'blankide';
+    
+    position: absolute;
+}
+
+
+/* <<<<< WELCOME >>>>>*/
+
+.contenedor-seccion{width: 100%;
+    height: 780px;
+    display: flex;}
+
+.la-caverna{background-image: url(banner-fondo.png);
+    width: 60%;
+    height: auto;
+    max-height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logoimg{width: 610px;
+margin-top: 270px;
+margin-left: 10px;}
+
+
+.menu{background-image: url(menu.png);
+    width: 40%;
+    height: 780px;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    
+
+}
+
+
+
+.menu-img {width: 220px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 70px;
+    transition: transform 0.3s ease;
+
+
+}
+
+.menu-img:hover {
+    transform:scale(1.2);
+}
+
+.menu-img-contactanos{width: 220px;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+
+}
+
+.menu-img-contactanos:hover {
+    transform:scale(1.2);
+}
+
+
+.menu-img-conocenos{width: 220px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    transition: transform 0.3s ease;
+
+}
+
+.menu-img-conocenos:hover {
+    transform:scale(1.2);
+}
+
+
+
+
+
+/* <<<<< CONOCENOS >>>>>*/
+
+.contenedor-seccion-2{background-image: url(seccion2.png);
+    width: 100%;
+    height: 1200px;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    justify-content: center;
+    text-align: center; 
+
+
+}
+
+.titulo-conocenos{width: 500px;
+    margin-top: 150px;
+    margin-left: 470px;
+   
+
+}
+
+
+.contenedor-texto-conocenos{width: 50%;
+    justify-content: right;
+    align-items: right;
+    margin-left:620px ;
+
+
+
+}
+
+.texto-conocenos{font-size: 27px;
+    font-family: BabyDoll;
+    line-height: 35px;
+    color: rgb(234, 234, 234);
+    text-align: justify;
+    
+
+
+}
+
+
+
+.contenedor-entrada {text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-left: 620px;}
+
+.titulo-entrada{font-size: 33px;
+    font-family: white-on-black;
+    color: rgb(212, 211, 211);
+    margin-top: 165px;
+
+
+}
+
+.texto-entrada{font-size: 27px;
+    font-family: BabyDoll;
+    line-height: 35px;
+    color: rgb(234, 234, 234);
+    margin-top: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;   
+    text-align: justify;
+    
+
+
+}
+
+
+.contenedor-mas-info{display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 470px;
+    margin-top: -5px;
+
+
+}
+
+.arrow1{width: 100px;
+    margin-right: 13px;
+    margin-top: 40px;
+
+
+}
+
+.arrow2{width: 100px;
+    margin-left: 17px;
+    margin-top: 40px;
+
+
+}
+
+.mas-info{width: 275px;
+    margin-top: 60px;
+    transition: transform 0.3s ease;
+
+
+}
+
+.mas-info:hover {
+    transform:scale(1.2);
+}
+
+
+
+
+
+
+/* <<<<< PRÓXIMAS FECHAS >>>>>*/
+
+.contenedor-seccion-3{background-image: url(seccion3.png);
+    width: 100%;
+    height: 1000px;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    justify-content: center;
+    text-align: center;
+    
+
+
+}
+
+.titulo-fechas{width: 500px;
+    margin-top: 150px;
+    
+}
+
+.fecha{font-size: 35px;
+    font-family: DrCaligari;
+    color: rgb(234, 234, 234);
+    margin-top: 65px;
+    border-bottom: 4px dotted rgb(160, 1, 1); 
+    display: inline-block; /* Hace que el borde se ajuste al texto solamente */
+    box-sizing: border-box;
+    
+
+
+}
+
+.banda {font-family: FalturaAlien;
+    font-size: 35px;
+    color: rgb(234, 234, 234);
+    margin-top: 1px;
+
+}
+
+
+
+
+
+
+
+
+
+/* <<<<< HACÉ TU RESERVA >>>>>*/
+
+.contenedor-seccion-4{background-image: url(seccion4.png);
+    width: 100%;
+    height: 1000px;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    justify-content: center;
+    text-align: center;
+
+
+}
+
+
+.titulo-reserva{width: 500px;
+    margin-top: 170px;
+    
+}
+
+.texto-reserva{font-size: 27px;
+    font-family: babydoll;
+    line-height: 35px;
+    color: rgb(234, 234, 234);
+    margin-top: 40px;
+
+
+}
+
+.contenedor-reserva{display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.reserva{width: 200px;
+    margin-top: 80px;
+    transition: transform 0.3s ease;
+
+
+}
+
+.reserva:hover {
+    transform:scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* <<<<< ENCONTRANOS >>>>>*/
+
+.contenedor-seccion-5{background-image: url(seccion5.png);
+    width: 100%;
+    height: 1150px;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    justify-content: center;
+    text-align: center; 
+
+
+}
+
+.titulo-encotrarnos{width: 500px;
+    margin-top: 170px;
+    
+}
+
+
+.mapa {width: 525px;
+    margin-top: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* <<<<< CONTACTANOS >>>>>*/
+
+.contenedor-seccion-6{background-image: url(seccion6.png);
+    width: 100%;
+    height: 1000px;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    justify-content: center;
+    text-align: center; 
+
+
+}
+
+.titulo-contactanos{width: 500px;
+    margin-top: 170px;
+    margin-right: 150px;
+
+
+}
+
+
+
+
+/* <<<<<RESERVA HTML>>>>>*/
+
+.section-reserva {background-image: url(reserva-fondo.png);
+    background-attachment: fixed;
+    width: 100%;
+    height: 900px;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    justify-content: center;
+    text-align: center;
+
+
+
+}
+
+.titulo-reserva-ext{width: 500px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+
+
+
+}
+
+
+
+.contenedor-formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+
+  .formulario {
+    width: 80%; 
+    max-width: 500px;
+    min-width: 200px;
+    background-color: rgba(15, 15, 15, 0.7);
+    border: 7px ridge rgb(234, 234, 234);
+  }
+
+.formulario p {color: rgb(234, 234, 234);
+    font-family:blankide ;
+    text-align: center; 
+    font-size: 20px;
+    margin: 10px;
+
+}
+
+
+
+.formulario input,
+.formulario textarea {
+    /* Otros estilos para tus campos de formulario, por ejemplo: */
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 15px; /* Espacio entre los campos y los párrafos */
+}
+
+.formulario select {
+    width: 100%; /* Ocupa todo el ancho de la caja del formulario */
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 15px; /* Espacio entre los campos y los párrafos */
+}
+
+
+
+
+
+.section-respuesta {background-image: url(reserva-fondo.png);
+    
+    width: 100%;
+    height: 650px;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    justify-content: center;
+    text-align: center;
+
+
+
+}
+
+
+
+
+
+
+
+.respuesta{font-size: 27px;
+    font-family: blankide;
+    color: rgb(234, 234, 234);
+    padding: 70px;
+    background-color: rgba(15, 15, 15, 0.7);
+   
+    border: 7px ridge rgb(234, 234, 234);
+    display: inline-block; /* Hace que el borde se ajuste al texto solamente */
+    box-sizing: border-box;
+    margin-top: 80px;
+
+
+
+}
+
+.volver{width: 200px;
+    margin-top: 80px;
+    transition: transform 0.3s ease;
+
+
+}
+
+.volver:hover {
+    transform:scale(1.2);
+}
+
+
+
+
+/* <<<<<TRABAJOS>>>>>*/
+
+.section-trabajos {background-image: url(trabajos-fondo.png);
+    background-attachment: fixed;
+    width: 100%;
+    height: 1750px;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    justify-content: center;
+    text-align: center;
+
+
+
+}
+
+.titulo-diseño{width: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+
+
+}
+
+.contenedor-trabajos{display: flex;
+    flex-flow: wrap;
+    justify-content: center; 
+    text-align: center;
+    align-items: stretch; 
+    margin-bottom: 70px;
+
+
+}
+
+.caja-trabajos{width: 30%; 
+    max-width: 340px;
+    margin: 30px;
+    margin-bottom: 40px;
+    background-color: rgba(15, 15, 15, 0.7);
+    border: 7px ridge rgb(234, 234, 234);
+
+
+}
+
+.caja-trabajos img { width: 100%; /* La imagen ocupará el 100% del ancho de su contenedor */
+    height: auto;
+    object-fit: contain; 
+    object-position: center center;
+
+}
+
+
+.nombre-alumno{font-family: blankide;
+    color: #ff615e;
+    text-align: center; 
+    font-size: 22px;
+    margin-top: 7px;
+}
+
+.nombre-trabajo{color: blanchedalmond;
+    margin-left: 50px;margin-right: 50px;margin-top: 7px;margin-bottom: 20px;
+    text-align: center; 
+    font-size: 20px;
+    font-family: 'Almendra', serif;
+    text-decoration: underline;
+    text-decoration-color: #ff615e;
+
+
+}
+
+
+.nombre-trabajo:hover{color: #ff615e;
+
+}
+
+
+
+/* <<<<<TRABAJOS INDIVIDUAL>>>>>*/
+
+.section-trabajos-individuales{background-image: url(trabajos-individuales-fondo2.png);
+    background-attachment: fixed;
+    width: 100%;
+    height: 800px;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    justify-content: center;
+    text-align: center;
+
+
+}
+
+.contenedor-trabajos-individual {display: flex;
+    flex-flow: wrap;
+    justify-content: center; 
+    text-align: center;
+    align-items: stretch;
+    margin-bottom: 30px;  
+    margin-top: 15px;
+    
+} 
+
+
+.caja-trabajos-imagen{margin-top: 0px;
+    margin: 15px;
+    margin-bottom: 40px;
+    width: 40%;
+    max-width: 400px; 
+    min-width: 400px;
+    object-fit: contain; 
+    justify-content: center;  
+}
+
+
+.trabajos-imagen {width: 100%; /* La imagen ocupará el 100% del ancho de su contenedor */
+    object-fit: contain; 
+    object-position: center center;
+}
+
+.trabajos-imagen:hover {cursor: pointer;}
+
+
+
+.caja-trabajos-texto{width: 50%; 
+     margin: 20px;
+     margin-right: 70px;
+     
+}
+
+
+
+.sobre-mi-texto {color: blanchedalmond;
+    font-family: 'Almendra', serif;
+    text-align: justify; 
+    font-size: 22px;
+    line-height: 1.5;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+.titulo-cielo {
+    font-size: 50px;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow:  1px 1px 1px, 4px 1px 1px rgb(35, 11, 11);
+    padding: 5px;
+    margin-left: 350px;
+}
+
+.titulo-marilyn {
+    font-size: 70px;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    color: whitesmoke;
+    font-family: misfits;
+    text-shadow:  1px 1px 1px, 4px 1px 1px rgb(35, 11, 11);
+    padding: 5px;
+    margin-left: 350px;
+}
+
+.titulo-principito {
+    font-size: 70px;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow:  1px 1px 1px, 4px 1px 1px rgb(35, 11, 11);
+    padding: 5px;
+    margin-left: 350px;
+}
+
+.titulo-cocinero {
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    color: whitesmoke;
+    font-family: engr;
+    text-shadow:  1px 1px 1px, 4px 1px 1px rgb(35, 11, 11);
+    padding: 20px;
+    margin-left: 350px;
+    
+}
+
+.titulo-iggy {
+    font-size: 70px;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    color: whitesmoke;
+    font-family: vtksControl;
+    text-shadow:  1px 1px 1px, 4px 1px 1px rgb(35, 11, 11);
+    padding: 8px;
+    line-height: 1.1;
+    margin-left: 350px;
+}
+
+.titulo-matilda {
+    font-size: 90px;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    color: whitesmoke;
+    font-family: nitemare;
+    text-shadow:  1px 1px 1px, 4px 1px 1px rgb(35, 11, 11);
+    padding: 5px;
+    letter-spacing: 7px;
+    font-style: italic;
+    margin-left: 350px;
+}
+
+
+
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+    padding-top: 30px;
+  }
+  
+  .modal img {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  .cerrar {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color:blanchedalmond;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .cerrar:hover {
+    color: #EA5755;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .cerrar:focus {
+    color: #EA5755;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .icono-ampliar {
+    position: absolute;
+    bottom: 10px; /* Ajusta según la distancia deseada desde el borde inferior */
+    right: 10px; /* Ajusta según la distancia deseada desde el borde derecho */
+    font-size: 20px;
+    color: #EA5755;
+    cursor: pointer;
+}

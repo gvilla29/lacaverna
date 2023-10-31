@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name = "viewport"content = "width = device-width,initial-scale = 1.0">
+    <title>La Caverna</title>
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+  <header id="sticky-header">
+    <a href="index.html">
+        <img class="logo-header" src="logo2.png">
+        </a>
+      
+        
+
+ <nav>
+    <a href="#seccion2">
+        <img class="header-img" src="conocenos.png">
+        </a>
+    <a href="#seccion3">
+        <img class="header-img" src="fechas.png">
+        </a>   
+    <a href="#seccion4">
+        <img class="header-img" src="reserva.png">
+        </a> 
+    <a href="#seccion5">
+        <img class="header-img" src="encontrarnos.png">
+        </a>    
+    <a href="#seccion6">
+        <img class="header-img" src="contactanos.png">
+        </a> 
+   </nav>
+</header>
+
+
+
+
+
+
+
+
+  
+  <section> 
+    <div id="content">
+    <div id="seccion1" class="contenedor-seccion">
+      
+      <div class="la-caverna"> 
+        <img class="logoimg" src="logo2.png" alt="">
+      </div>
+
+      <div class="menu">
+        <a href="#seccion2">
+            <img class="menu-img-conocenos" src="conocenos.png">
+            </a>
+        <a href="#seccion3">
+            <img class="menu-img" src="fechas.png">
+            </a>   
+        <a href="#seccion4">
+            <img class="menu-img" src="reserva.png">
+            </a> 
+        <a href="#seccion5">
+            <img class="menu-img" src="encontrarnos.png">
+            </a>    
+        <a href="#seccion6">
+            <img class="menu-img-contactanos" src="contactanos.png">
+            </a>  
+
+      </div>
+
+
+
+
+    </div>
+   </div>
+
+    <div id="seccion2" class="contenedor-seccion-2">
+       
+        <img class="titulo-conocenos" src="conocenos.png" alt="">
+       
+       <div class="contenedor-texto-conocenos">
+        <p class="texto-conocenos">Lorem ipsum dolor sit amet consectetur adipiscing elit tincidunt lectus ad, 
+        at risus porttitor montes morbi enim justo erat. 
+        Iaculis feugiat fames primis proin vitae sodales suspendisse curabitur semper. 
+        
+        </p>
+        </div>
+
+
+        <div class="contenedor-entrada">
+        
+          <p class="titulo-entrada">Llevate tu entrada<br>personalizada</p> 
+          <p class="texto-entrada">Lorem ipsum dolor sit amet consectetur adipiscing elit tincidunt lectus ad, 
+            at risus porttitor montes morbi enim justo erat.</p>
+
+        </div>    
+        
+        <div class="contenedor-mas-info">
+            <img class="arrow1" src="arrow1.png" alt="">
+            <a href="trabajos.html">
+                <img class="mas-info" src="boton-diseño2.png">
+            </a> 
+            <img class="arrow2" src="arrow2.png" alt="">
+
+        </div>
+
+    </div>
+
+    
+    
+    
+    
+    
+    <div id="seccion3" class="contenedor-seccion-3">
+        <img class="titulo-fechas" src="fechas.png" alt="">
+        <div>
+            <p class="fecha">03/11/23 <br> <p class="banda">Nombre de banda</p></p>
+            <P class="fecha">04/11/23 <br> <p class="banda">Nombre de banda</p></P>
+            <P class="fecha">10/11/23 <br> <p class="banda">Nombre de banda</p></P>
+            
+
+
+
+        </div>
+      
+    </div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="seccion4" class="contenedor-seccion-4">
+        <img class="titulo-reserva" src="reserva.png" alt="">
+        <p class="texto-reserva">Lorem ipsum dolor sit amet consectetur <br>adipiscing elit tincidunt lectus ad.</p>
+
+        <div class="contenedor-reserva">
+            <img class="arrow1" src="arrow1.png" alt="">
+            <a href="reserva.html">
+                <img class="reserva" src="reservabtn.png">
+            </a> 
+            <img class="arrow2" src="arrow2.png" alt="">
+
+        </div>
+      
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div id="seccion5" class="contenedor-seccion-5">
+        <img class="titulo-encotrarnos" src="encontrarnos.png" alt="">
+
+        <div class="contenedor-mapa">
+            <img class="mapa" src="mapa.png" >
+        
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div id="seccion6" class="contenedor-seccion-6">
+        <img class="titulo-contactanos" src="contactanos.png" alt="">
+
+
+        
+      
+    </div>
+
+  
+  </section> 
+
+  <footer>
+    <div class="footer-text">
+        <h1>© 2023 La Caverna</h1> 
+       </div>
+
+  </footer>
+
+
+
+
+
+
+
+
+
+  <script>
+const header = document.getElementById('sticky-header');
+const content = document.getElementById('content');
+
+window.addEventListener('scroll', function() {
+    // Obtén la posición de la sección 2
+    const seccion2 = document.getElementById('seccion2');
+    const seccion2Pos = seccion2.offsetTop;
+
+    // Si hemos pasado la sección 2, muestra el header, de lo contrario, ocúltalo
+    if (window.pageYOffset > seccion2Pos) {
+        header.classList.add('visible');
+        content.classList.add('content-shifted');
+    } else {
+        header.classList.remove('visible');
+        content.classList.remove('content-shifted');
+    }
+});
+
+
+
+  </script>
+
+
+
+
+
+
+
+</body>
+
+</html>
