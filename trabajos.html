@@ -38,82 +38,49 @@
 </header>
 
   
-  <section class="section-trabajos"> 
+<section class="section-trabajos"> 
 
 
 
     <img class="titulo-diseño" src="diseños.png" alt="">
 
+    <p class="texto-diseños">Las entradas se entregan al azar, y cada una tiene un diseño único. <br> ¿Cuál te va a tocar a vos?</p>
 
     <div class="contenedor-trabajos">
-        <div class="caja-trabajos">
-            <img src="foto-andres.png" alt="">
-            <p class="nombre-alumno">Marlon Andrés <br> Morales Urgiles</p>
-            <a href="foto-andres.html">
-                <p class="nombre-trabajo">Desde mi cielo</p>
-            </a>
-            
-        </div>
+    
+    
+        <a href="foto-gabi.html">
+            <div onmouseover="changeImage(document.getElementById('img-gabi'), 'foto-gabi-2.png', 'lenguajes')" onmouseleave="restoreImage(document.getElementById('img-gabi'), 'foto-gabi-1.png', 'lenguajes')" onclick="changeImage(document.getElementById('img-gabi'), 'foto-gabi-2.png', 'lenguajes')">
+                <img id="img-gabi" src="foto-gabi-1.png" class="lenguajes">
+            </div>
+        </a>
+        
+        <a href="collage-gabi.html" class="lenguajes-link">
+            <img src="collage-gabi-1.png" class="lenguajes" onmouseover="changeImage(this, 'collage-gabi-2.png', 'lenguajes')" onmouseleave="restoreImage(this, 'collage-gabi-1.png', 'lenguajes')" onclick="changeImage(this, 'collage-gabi-2.png', 'lenguajes')">
+        </a>
 
+        <a href="libro-gabi.html" class="lenguajes-link">
+            <img src="libro-gabi-1.png" class="lenguajes" onmouseover="changeImage(this, 'libro-gabi-2.png', 'lenguajes')" onmouseleave="restoreImage(this, 'libro-gabi-1.png', 'lenguajes')" onclick="changeImage(this, 'libro-gabi-2.png', 'lenguajes')">
+        </a>
 
-        <div class="caja-trabajos">
-            <img src="collage-andres.png" alt="">
-            <p class="nombre-alumno">Marlon Andrés <br> Morales Urgiles</p>
-            <a href="collage-andres.html">
-                <p class="nombre-trabajo">Marilyn Manson</p>
-            </a>
-            
-        </div>
+        <a href="foto-andres.html" class="lenguajes-link">
+            <img src="foto-andres-1.png" class="lenguajes" onmouseover="changeImage(this, 'foto-andres-2.png', 'lenguajes')" onmouseleave="restoreImage(this, 'foto-andres-1.png', 'lenguajes')" onclick="changeImage(this, 'foto-andres-2.png', 'lenguajes')">
+        </a>
 
-        <div class="caja-trabajos">
-            <img src="libro-andres.png" alt="">
-            <p class="nombre-alumno">Marlon Andrés <br> Morales Urgiles</p>
-            <a href="libro-andres.html">
-                <p class="nombre-trabajo">El Principito</p>
-            </a>
-            
-        </div>
+        <a href="collage-andres.html" class="lenguajes-link">
+            <img src="collage-andres-1.png" class="lenguajes" onmouseover="changeImage(this, 'collage-andres-2.png', 'lenguajes')" onmouseleave="restoreImage(this, 'collage-andres-1.png', 'lenguajes')" onclick="changeImage(this, 'collage-andres-2.png', 'lenguajes')">
+        </a>
 
-
-
-
-
-
-        <div class="caja-trabajos">
-            <img src="foto-gabi.png" alt="">
-            <p class="nombre-alumno">Gabriela Villagra</p>
-            <a href="foto-gabi.html">
-                <p class="nombre-trabajo">El cocinero, el ladrón, su esposa y su amante</p>
-            </a>
-            
-        </div>
-
-
-        <div class="caja-trabajos">
-            <img src="collage-gabi.png" alt="">
-            <p class="nombre-alumno">Gabriela Villagra</p>
-            <a href="collage-gabi.html">
-                <p class="nombre-trabajo">Iggy Pop <br>Lust for Life</p>
-            </a>
-            
-        </div>
-
-
-
-        <div class="caja-trabajos">
-            <img src="libro-gabi.png" alt="">
-            <p class="nombre-alumno">Gabriela Villagra</p>
-            <a href="libro-gabi.html">
-                <p class="nombre-trabajo">Matilda</p>
-            </a>
-            
-        </div>
+        <a href="libro-andres.html" class="lenguajes-link">
+            <img src="libro-andres-1.png" class="lenguajes" onmouseover="changeImage(this, 'libro-andres-2.png', 'lenguajes')" onmouseleave="restoreImage(this, 'libro-andres-1.png', 'lenguajes')" onclick="changeImage(this, 'libro-andres-2.png', 'lenguajes')">
+        </a>
     
     
     
-    
+        
+
+   
     </div>
-    
    
 
  
@@ -122,6 +89,25 @@
 
    
   </section> 
+
+  <script>
+    function changeImage(image, newSrc) {
+  image.src = newSrc;
+}
+
+
+function restoreImage(image, originalSrc, originalClass) {
+  image.src = originalSrc;
+  image.className = originalClass;
+}
+
+
+
+  </script>
+
+
+
+
 
   <footer>
     <div class="footer-text">
