@@ -81,6 +81,17 @@
 
 * {margin: 0; padding: 0}
 
+
+
+::-webkit-scrollbar-thumb {
+    background-color: black; /* Color del "pulgar" de la barra de desplazamiento */
+    border: #fc1672 ridge 4px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 22px; /* Ancho de la barra de desplazamiento */
+  }
+
 /* <<<<< HEADER >>>>>*/
 
 
@@ -852,65 +863,51 @@ margin-left: 10px;}
 
 }
 
-.volver-lenguajes-2:hover {
+.volver-lenguajes-3:hover {
     transform:scale(1.2);
 }
 
 
-
-
-
-
-
-
-
-
-
-
-.titulo-cielo {
-    font-size: 50px;
+.section-leguajes-andres-collage{background-image: url(section-andres-collage.png);
+    width: 100%;
+    height: 800px;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    justify-content: center;
     text-align: center;
-    line-height: 1.5;
-    font-weight: lighter;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    color: whitesmoke;
-    font-family: 'Times New Roman', Times, serif;
-    text-shadow:  1px 1px 1px, 4px 1px 1px rgb(35, 11, 11);
-    padding: 5px;
-    margin-left: 350px;
+
+
 }
 
-.titulo-marilyn {
-    font-size: 70px;
+
+
+.section-leguajes-andres-foto{background-image: url(section-andres-foto.png);
+    width: 100%;
+    height: 800px;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    justify-content: center;
     text-align: center;
-    line-height: 1.5;
-    font-weight: lighter;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    color: whitesmoke;
-    font-family: misfits;
-    text-shadow:  1px 1px 1px, 4px 1px 1px rgb(35, 11, 11);
-    padding: 5px;
-    margin-left: 350px;
+
 }
 
-.titulo-principito {
-    font-size: 70px;
+
+.section-leguajes-andres-ilustración{background-image: url(section-andres-ilus.png);
+    width: 100%;
+    height: 800px;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    justify-content: center;
     text-align: center;
-    line-height: 1.5;
-    font-weight: lighter;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    color: whitesmoke;
-    font-family: 'Times New Roman', Times, serif;
-    text-shadow:  1px 1px 1px, 4px 1px 1px rgb(35, 11, 11);
-    padding: 5px;
-    margin-left: 350px;
+
+
 }
+
+
+
 
 
 
