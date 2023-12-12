@@ -78,6 +78,23 @@
     
 }
 
+@font-face {
+    font-family: 'Almendra';
+    src: url('Almendra-Regular.ttf') format('truetype'); 
+    
+}
+
+
+
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
 
 * {margin: 0; padding: 0}
 
@@ -438,7 +455,7 @@ margin-left: 10px;}
 
 /* <<<<< HACÉ TU RESERVA >>>>>*/
 
-.contenedor-seccion-4{background-image: url(seccion4.png);
+.contenedor-seccion-4{background-image: url(seccion4-2.png);
     width: 100%;
     height: 1000px;
     background-size: cover; 
@@ -462,16 +479,18 @@ margin-left: 10px;}
     align-items: center;
     text-align: center;
     display: flex;
-    width: 45%;
+    width: 46%;
     margin-left: 420px;
 
 
 }
 
-.texto-reserva{font-size: 24px;
+.texto-reserva{font-size: 26px;
     font-family: babydoll;
-    line-height: 29px;
+    line-height: 31px;
     color: rgb(234, 234, 234);
+   
+    
     margin-top: 40px;
     text-align: justify;
 
@@ -736,7 +755,7 @@ margin-left: 10px;}
 }
 
 
-.section-trabajos {background-image: url(trabajos-fondo.png);
+.section-trabajos {background-image: url(trabajos-fondo-2.png);
     background-attachment: fixed;
     width: 100%;
     height: 1550px;
